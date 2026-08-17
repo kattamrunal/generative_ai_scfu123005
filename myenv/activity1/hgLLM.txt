@@ -1,0 +1,25 @@
+------------------------------------------------------------Model 1-----------------------------------------------------------------------------
+Name:moonshotai/Kimi-K3
+Created by: Moonshot Ai
+No. of parameters: 2.8T
+Generative Model: Yes
+Context length: 1048576 tokens
+Suitable for local execution: No (2.8T para * 2(float16 so 2) = 5.6 TB/1024=5,734.4 GB Ram size required)
+What hardware does the model card recommend? Not Specified
+------------------------------------------------------------Model 2-----------------------------------------------------------------------------
+Name:Flash-0731
+Created by: DeepSeek
+No. of parameters:304 B
+Generative Model: Yes
+Context length: 1048576 tokens
+Suitable for local execution: No (304B para * 2(float16 so 2) =608 B Bytes and 608B/1024= 566.24 GB Ram size required)
+What hardware does the model card recommend? Not Specified
+------------------------------------------------------------Model 3-----------------------------------------------------------------------------
+Name: LFM2.5-2.6B-GGUF
+Created by: Liquid Ai  
+No. of parameters: 3B
+Generative Model: Yes
+Context length: 131,072 tokens
+Suitable for local execution: No (3B para * 2(float16 so 2) = 6B Bytes/1024=5.588 GB Ram size required)
+What hardware does the model card recommend: Apple M5 Max or AMD Ryzen CPU
+------------------------------------------------------------------------------------------------------------------------------------------------
