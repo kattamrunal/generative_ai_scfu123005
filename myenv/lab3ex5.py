@@ -1,9 +1,13 @@
+import os
+from dotenv import load_dotenv
 from groq import Groq
 
-# GROQ_API_KEY = "API KEY HERE"
+load_dotenv()
+
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 client = Groq(
-    # GROQ_API_KEY HERE,
+    api_key=GROQ_API_KEY
 )
 
 systemprompt = {
