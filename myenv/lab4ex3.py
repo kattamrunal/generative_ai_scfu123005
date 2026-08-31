@@ -13,7 +13,7 @@ load_dotenv()
 
 client = OpenAI(
   base_url = "https://integrate.api.nvidia.com/v1",
-  # api_key=os.getenv("NVIDIA_API_KEY")
+  # API KEY HERE
 )
 
 transcript_text = """

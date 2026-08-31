@@ -1,10 +1,10 @@
-# GROQ_API_KEY = "API KEY HERE"
+
 
 import os
 from groq import Groq
 
 client = Groq(
-    api_key=GROQ_API_KEY,
+    # GROQ_API_KEY HERE,
 )
 
 systemprompt={

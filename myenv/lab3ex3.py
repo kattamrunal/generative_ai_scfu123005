@@ -4,7 +4,7 @@ import os
 from groq import Groq
 
 client = Groq(
-    api_key=GROQ_API_KEY,
+    # GROQ_API_KEY HERE,
 )
 
 systemprompt = {

@@ -3,7 +3,7 @@ from groq import Groq
 # GROQ_API_KEY = "API KEY HERE"
 
 client = Groq(
-    api_key=GROQ_API_KEY
+    # GROQ_API_KEY HERE,
 )
 
 systemprompt = {

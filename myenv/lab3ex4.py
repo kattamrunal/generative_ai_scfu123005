@@ -2,8 +2,8 @@
 
 import os
 from groq import Groq
-client=Groq(
-    api_key=GROQ_API_KEY
+client = Groq(
+    # GROQ_API_KEY HERE,
 )
 
 systemprompt = {
