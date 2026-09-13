@@ -12,22 +12,22 @@ load_dotenv()
 
 model=ChatGroq(model="openai/gpt-oss-120b")
 
-chat_history=[
+messages=[
     SystemMessage(
     content="""You are a Python debugging assistant. 
-Given broken code and its error, return:
-1. Corrected code
-2. One-line explanation
+        Given broken code and its error, return:
+        1. Corrected code
+        2. One-line explanation
 
-Clearly separate both outputs and handle different Python error types."""
-)
+        Clearly separate both outputs and handle different Python error types."""
+        )
 ]
 
 # code=str(input("Enter Code"))
 code = 'print(name)'
 error = "NameError: name 'name' is not defined"
 
-chat_history.append(HumanMessage(content=f"code {code}, error {error}"))
-result=model.invoke(chat_history)
-chat_history.append(AIMessage(content=result.content))
+messages.append(HumanMessage(content=f"code {code}, error {error}"))
+result=model.invoke(messages)
+messages.append(AIMessage(content=result.content))
 print(result.content)

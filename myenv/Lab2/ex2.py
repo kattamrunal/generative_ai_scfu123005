@@ -13,20 +13,20 @@ load_dotenv()
 
 model=ChatGroq(model="openai/gpt-oss-20b")
 
-chat_history=[
+messages=[
     SystemMessage(
         content="""You are an Instagram caption generator for college fests.
 
-    Your task is to create engaging, creative, and student-friendly Instagram captions based on:
+        Your task is to create engaging, creative, and student-friendly Instagram captions based on:
 
-    * Fest name
-    * Fest theme"""
-    )
+        * Fest name
+        * Fest theme"""
+        )
 ]
 
 festname=input("Fest Name:")
 festtheme=input("Fest Theme:")
-chat_history.append(HumanMessage(content=f"Fest Name: {festname}\nFest Theme: {festtheme}"))
-result=model.invoke(chat_history)
-chat_history.append(AIMessage(content=result.content))
+messages.append(HumanMessage(content=f"Fest Name: {festname}\nFest Theme: {festtheme}"))
+result=model.invoke(messages)
+messages.append(AIMessage(content=result.content))
 print(result.content)
